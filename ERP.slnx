@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/SRC/" />
+  <Folder Name="/SRC/ERP.Api/">
+    <Project Path="ERP.Api/ERP.Api.csproj" />
+  </Folder>
+  <Folder Name="/SRC/ERP.Business/">
+    <Project Path="ERP.Business/ERP.Business.csproj" />
+  </Folder>
+  <Folder Name="/SRC/ERP.Core/">
+    <Project Path="ERP.Core/ERP.Core.csproj" />
+  </Folder>
+  <Folder Name="/SRC/ERP.Data/">
+    <Project Path="ERP.Data/ERP.Data.csproj" />
+  </Folder>
+  <Folder Name="/SRC/ERP.Middleware/">
+    <Project Path="ERP.Middleware/ERP.Middleware.csproj" />
+  </Folder>
+  <Folder Name="/SRC/ERP.Web/">
+    <Project Path="ERP.Web/ERP.Web.csproj" />
+  </Folder>
+</Solution>
