@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.1.1" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Common\" />
     <Folder Include="DTOs\" />
     <Folder Include="Helpers\" />
@@ -15,6 +22,46 @@
     <Folder Include="Validators\" />
     <Folder Include="Services\" />
     <Folder Include="Resources\" />
+    <Folder Include="Features\Organization\Dtos\" />
+    <Folder Include="Features\Organization\Interfaces\" />
+    <Folder Include="Features\Organization\Services\" />
+    <Folder Include="Features\Organization\Validators\" />
+    <Folder Include="Features\HR\Dtos\" />
+    <Folder Include="Features\HR\Interfaces\" />
+    <Folder Include="Features\HR\Services\" />
+    <Folder Include="Features\HR\Validators\" />
+    <Folder Include="Features\Catalog\Dtos\" />
+    <Folder Include="Features\Catalog\Interfaces\" />
+    <Folder Include="Features\Catalog\Services\" />
+    <Folder Include="Features\Catalog\Validators\" />
+    <Folder Include="Features\Inventory\Dtos\" />
+    <Folder Include="Features\Inventory\Interfaces\" />
+    <Folder Include="Features\Inventory\Services\" />
+    <Folder Include="Features\Inventory\Validators\" />
+    <Folder Include="Features\POS\Dtos\" />
+    <Folder Include="Features\POS\Interfaces\" />
+    <Folder Include="Features\POS\Services\" />
+    <Folder Include="Features\POS\Validators\" />
+    <Folder Include="Features\Procurement\Dtos\" />
+    <Folder Include="Features\Procurement\Interfaces\" />
+    <Folder Include="Features\Procurement\Services\" />
+    <Folder Include="Features\Procurement\Validators\" />
+    <Folder Include="Features\Finance\Dtos\" />
+    <Folder Include="Features\Finance\Interfaces\" />
+    <Folder Include="Features\Finance\Services\" />
+    <Folder Include="Features\Finance\Validators\" />
+    <Folder Include="Features\CRM\Dtos\" />
+    <Folder Include="Features\CRM\Interfaces\" />
+    <Folder Include="Features\CRM\Services\" />
+    <Folder Include="Features\CRM\Validators\" />
+    <Folder Include="Features\Reports\Dtos\" />
+    <Folder Include="Features\Reports\Interfaces\" />
+    <Folder Include="Features\Reports\Services\" />
+    <Folder Include="Features\Reports\Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Core\ERP.Core.csproj" />
   </ItemGroup>
 
 </Project>
