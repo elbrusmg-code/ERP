@@ -2,6 +2,7 @@ using ERP.Business;
 using ERP.Data;
 using ERP.Data.Persistence;
 using ERP.Data.Seed;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,12 @@ if (app.Environment.IsDevelopment())
     await ERPDbSeeder.SeedAsync(dbContext);
 
     app.MapOpenApi();
+    app.MapScalarApiReference(options =>
+    {
+        options.Title = "SmartMarket ERP API";
+        options.Theme = ScalarTheme.Default;
+        options.DefaultHttpClient = new(ScalarTarget.CSharp, ScalarClient.HttpClient);
+    });
 }
 
 app.UseHttpsRedirection();
